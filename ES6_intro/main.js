@@ -55,3 +55,27 @@ let squireFunction = (squreAry) => {
 console.log(squireFunction(arySqure));
 
 
+
+// Problem 4
+// _______________________________________________________________
+
+let getMaxNumary1 = [1,2,3,4,54,5];
+let getMaxNumary2 = [22,33,44,55,66,90];
+
+let getMaxNum = (ary1, ary2) => {
+    let combainedAry = [...getMaxNumary1, ...getMaxNumary2];
+    return Math.max(...combainedAry);
+}
+
+console.log(getMaxNum(getMaxNumary1, getMaxNumary2));
+
+
+
+
+
+
+
+
+
+
+
