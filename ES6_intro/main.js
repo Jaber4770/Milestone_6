@@ -66,7 +66,6 @@ let getMaxNum = (ary1, ary2) => {
     let combainedAry = [...getMaxNumary1, ...getMaxNumary2];
     return Math.max(...combainedAry);
 }
-
 console.log(getMaxNum(getMaxNumary1, getMaxNumary2));
 
 
