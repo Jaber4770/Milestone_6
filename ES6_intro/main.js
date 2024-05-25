@@ -37,3 +37,21 @@ console.log(arrayTakingAero(aryOfFriend));
 
 
 
+// Problem 3
+// _______________________________________________________________
+
+let arySqure = [2,3,4,5,6];
+
+let squireFunction = (squreAry) => {
+    let sum = 0;
+    for(let number of squreAry){
+        let squreNumber = Math.pow(number, 2);
+        sum += squreNumber;
+    }
+    let avarage = sum / arySqure.length;
+    return avarage;
+}
+
+console.log(squireFunction(arySqure));
+
+
