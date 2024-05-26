@@ -41,6 +41,34 @@ let getSenior = instructor.filter(p => { if(p.position === "senior"){
 console.log(senior);
 
 
+// Problem-3
+// __________________________________________
+
+const people = [
+    {name: "Meena", Age: 20},
+    {name: "rita", Age: 15},
+    {name: "suchorita", Age: 22}
+];
+
+let sum = 0;
+for(const age of people){
+    let personAge = age.Age;
+    sum += personAge;
+}
+
+console.log("Total sum of these age is: ", sum);
+
+
+
+// Problem-4
+// __________________________________________
+
+
+
+
+
+
+
 
 
 
