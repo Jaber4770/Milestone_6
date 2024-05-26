@@ -27,10 +27,18 @@ console.log(getFirstNum);
 // Problem-3
 // __________________________________________
 
+const instructor = [
+    {name: "nodi", age: 28, position: "senior"},
+    {name: "akil", age: 28, position: "mid-level"},
+    {name: "shobuj", age: 28, position: "junior"},
+    {name: "Nadia", age: 28, position: "senior"}
+]
 
-
-
-
+let senior = [];
+let getSenior = instructor.filter(p => { if(p.position === "senior"){
+    senior.push(p);
+}});
+console.log(senior);
 
 
 
