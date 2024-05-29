@@ -58,17 +58,20 @@ for(const age of people){
 
 console.log("Total sum of these age is: ", sum);
 
+const sumOfAge = people.reduce((accumlator, currentValue) => accumlator + currentValue.Age, 0);
+console.log(sumOfAge);
 
 
-// Problem-4
-// __________________________________________
+function min(nums) { return Math.min(nums) }
+console.log(min( ...[1,3,2 ]));
+
+const [a, b] = [1,2,3,4,45,5]; 
+console.log(a+b);
 
 
-
-
-
-
-
+const nums = [1,2,3,4,5];
+let output = nums.filter(n => n%2);
+console.log(output);
 
 
 

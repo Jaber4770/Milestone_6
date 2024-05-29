@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunting Phone</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <h1 class="text-5xl my-5">Hunting Phone</h1>
+        <label class="input input-bordered flex items-center gap-2">
+            <input id="searchText" type="text" class="grow" placeholder="Search" />
+            <button onclick="searchHandler()" class="btn p-3">Search</button>
+        </label>
+    </header>
+    <main class="container mx-auto">
+        <div id="phone-cart-container" class="grid grid-cols-3 gap-4 my-5 text-center">
+
+        </div>
+        <div id="showAllButtonContainer" class="hidden text-center my-5">
+            <button onclick="showAll()" class="btn btn-accent">Show All Phone</button>
+        </div>
+        <div id="spinnerContainer" class="hidden flex justify-center items-center">
+            <span class="loading loading-spinner loading-lg"></span>
+        </div>
+        <!-- phone details modal -->
+        <!-- Open the modal using ID.showModal() method -->
+
+        <div id="modal-container" class="">
+            <dialog id="phone_details_modal" class="modal">
+                <div>
+                    <div id="phone_Details_container" class="modal-box my-5 py-5">
+
+                    </div>
+                </div>
+            </dialog>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/fetch.js"></script>
+</body>
+
+</html>
