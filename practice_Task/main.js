@@ -18,7 +18,7 @@ setTimeout(() => {
 }, 5000)
 
 // 2
-function delayedGreeting(name, delay_time){
+function delayedGreeting(name, delay_time) {
     setTimeout(() => {
         console.log("Hello ", name);
     }, delay_time);
@@ -28,11 +28,27 @@ delayedGreeting("Jack", 5000);
 
 
 
-function delay(name, time){
-    setTimeout(()=>{
+function delay(name, time) {
+    setTimeout(() => {
         console.log("Hello ", name, "after", time, "seconds");
-    },time)
+    }, time)
 }
 
-delay("Jack",2000);
+delay("Jack", 2000);
 
+// Task-2  The function tellJoke() below logs a funny message every 2 seconds and after 10 seconds, it stops. Complete the code below and see the output. 
+
+
+function tellJoke() {
+    console.log("Why don't scientists trust atoms? Because they make up everything!");
+}
+
+const jokeInterval = setInterval(tellJoke, 2000);
+
+// After 10 seconds, stop telling jokes
+
+setTimeout(() => {
+
+    clearInterval(jokeInterval);
+
+}, 10000);
